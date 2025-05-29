@@ -27,7 +27,7 @@ resource "google_compute_firewall" "allow_ssh_management" {
   priority  = 100
 
   source_ranges = ["0.0.0.0/0"]
-  target_tags   = ["management-vm"]
+  target_tags   = ["management-private-vm"]
 
   allow {
     protocol = "tcp"
